@@ -1,19 +1,31 @@
-.shop-container{
+.shop-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
-.product-container{
+
+.product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.8rem;
     margin: 100px 50px;
 }
-.cart-container{
+
+.cart-container {
     background: rgba(255, 153, 0, 0.3);
 }
 
 @media screen and (max-width:768px) {
-    .product-container{
+    .product-container {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.pagination button {
+    margin-right: 10px;
+    border: 1px solid orange;
+}
+
+.selected {
+    background-color: orange;
+    color: #fff;
 }
